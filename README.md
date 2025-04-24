@@ -21,15 +21,15 @@ XpertAgentNotes 是一个关于人工智能(AI)的全面知识库，旨在提供
 项目按主题组织成不同目录，包括：
 
 - **T01.LLM_Related/**: 大模型相关知识体系
-  - **[01_Introduction](T01.LLM_Related/01_Introduction.md)**: 大模型基础概念与发展历程
-  - **[02_Architecture_Components](T01.LLM_Related/02_Architecture_Components.md)**: 模型架构与核心组件
-  - **[03_Training_Methods](T01.LLM_Related/03_Training_Methods.md)**: 训练方法与技术
-  - **[04_Fine_Tuning](T01.LLM_Related/04_Fine_Tuning.md)**: 微调技术与方法
-  - **[05_Inference_Deployment](T01.LLM_Related/05_Inference_Deployment.md)**: 推理优化与部署架构
-  - **[06_Agents_Applications](T01.LLM_Related/06_Agents_Applications.md)**: 智能体架构与应用
-  - **[07_Toolchain_Ecosystem](T01.LLM_Related/07_Toolchain_Ecosystem.md)**: 工具链与生态系统
-  - **[08_QA_Interview](T01.LLM_Related/08_QA_Interview.md)**: 面试问答与知识检验
-  - **[09_Resources](T01.LLM_Related/09_Resources.md)**: 学习资源与参考材料
+  - **[01_Introduction](T01.LLM_Related/01_Introduction/README.md)**: 大模型基础概念与发展历程
+  - **[02_Architecture_Components](T01.LLM_Related/02_Architecture_Components/README.md)**: 模型架构与核心组件
+  - **[03_Training_Methods](T01.LLM_Related/03_Training_Methods/README.md)**: 训练方法与技术
+  - **[04_Fine_Tuning](T01.LLM_Related/04_Fine_Tuning/README.md)**: 微调技术与方法
+  - **[05_Inference_Deployment](T01.LLM_Related/05_Inference_Deployment/README.md)**: 推理优化与部署架构
+  - **[06_Agents_Applications](T01.LLM_Related/06_Agents_Applications/README.md)**: 智能体架构与应用
+  - **[07_Toolchain_Ecosystem](T01.LLM_Related/07_Toolchain_Ecosystem/README.md)**: 工具链与生态系统
+  - **[08_QA_Interview](T01.LLM_Related/08_QA_Interview/README.md)**: 面试问答与知识检验
+  - **[09_Resources](T01.LLM_Related/09_Resources/README.md)**: 学习资源与参考材料
 
 ## 🌟 项目特色
 
