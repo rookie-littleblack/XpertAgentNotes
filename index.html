@@ -21,13 +21,12 @@
                 padding-left: 10px;
             }
             
-            /* 增强侧边栏层级显示 */
+            /* 一级菜单样式 */
             .sidebar-nav > ul > li {
                 margin-bottom: 12px;
                 line-height: 1.6;
             }
             
-            /* 一级标题样式 */
             .sidebar-nav > ul > li > a {
                 font-size: 16px;
                 font-weight: 600;
@@ -36,12 +35,23 @@
                 transition: all 0.3s ease;
             }
             
-            /* 二级菜单样式 */
+            /* 清除所有旧样式，重新设置二级和三级菜单 */
+            .sidebar-nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            
+            /* 第二级菜单 */
+            .sidebar-nav > ul > li > ul {
+                margin-left: 10px;
+            }
+            
             .sidebar-nav > ul > li > ul > li {
-                margin: 6px 0 6px 10px;
+                padding-left: 16px;
                 position: relative;
-                padding-left: 15px;
-                line-height: 1.5;
+                line-height: 1.8;
+                margin: 4px 0;
             }
             
             .sidebar-nav > ul > li > ul > li > a {
@@ -49,135 +59,76 @@
                 color: #444;
             }
             
-            /* 三级及以下菜单样式 */
-            .sidebar-nav > ul > li > ul > li > ul li {
-                margin: 4px 0 4px 10px;
-                position: relative;
-                padding-left: 15px;
-                line-height: 1.4;
+            /* 第三级菜单 */
+            .sidebar-nav > ul > li > ul > li > ul {
+                margin-left: 0;
             }
             
-            .sidebar-nav > ul > li > ul > li > ul li > a {
+            .sidebar-nav > ul > li > ul > li > ul > li {
+                padding-left: 16px;
+                position: relative;
+                line-height: 1.7;
+                margin: 2px 0;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li > a {
                 font-size: 13px;
                 color: #555;
             }
             
-            /* 添加层级标记 - 优化对齐 */
-            .sidebar-nav > ul > li > ul > li {
-                border-left: none;
-            }
-            
-            .sidebar-nav > ul > li > ul > li > a:before {
-                content: "├─ ";
-                color: #999;
-                position: absolute;
-                left: 0;
-            }
-            
-            .sidebar-nav > ul > li > ul > li:last-child > a:before {
-                content: "└─ ";
-                color: #999;
-                position: absolute;
-                left: 0;
-            }
-            
-            .sidebar-nav > ul > li > ul > li > ul > li {
-                border-left: none;
-            }
-            
-            .sidebar-nav > ul > li > ul > li > ul > li > a:before {
-                content: "│  ├─ ";
-                color: #999;
-                position: absolute;
-                left: 0;
-            }
-            
-            .sidebar-nav > ul > li > ul > li > ul > li:last-child > a:before {
-                content: "│  └─ ";
-                color: #999;
-                position: absolute;
-                left: 0;
-            }
-            
-            .sidebar-nav > ul > li > ul > li > ul > li > ul > li {
-                border-left: none;
-            }
-            
-            .sidebar-nav > ul > li > ul > li > ul > li > ul > li > a:before {
-                content: "│  │  ├─ ";
-                color: #999;
-                position: absolute;
-                left: 0;
-            }
-            
-            .sidebar-nav > ul > li > ul > li > ul > li > ul > li:last-child > a:before {
-                content: "│  │  └─ ";
-                color: #999;
-                position: absolute;
-                left: 0;
-            }
-            
-            /* 竖线样式 */
-            .sidebar-nav > ul > li > ul:before {
-                display: none;
-            }
-            
-            .sidebar-nav > ul > li > ul > li:before {
+            /* 树形结构线条 - 第二级 */
+            .sidebar-nav > ul > li > ul > li::before {
                 content: "";
                 position: absolute;
+                top: 0;
                 left: 0;
-                top: -6px;
-                height: calc(100% + 6px);
-                border-left: 1px solid #ddd;
-                z-index: 0;
+                bottom: 0;
+                width: 16px;
+                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='24'><path d='M8,0 L8,17 M8,17 L16,17' stroke='%23bbb' fill='none' /></svg>") no-repeat;
+                background-position: 0 9px;
             }
             
-            .sidebar-nav > ul > li > ul > li:first-child:before {
-                top: 10px;
-                height: calc(100% - 10px);
+            .sidebar-nav > ul > li > ul > li:last-child::before {
+                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='24'><path d='M8,0 L8,17 M8,17 L16,17' stroke='%23bbb' fill='none' /></svg>") no-repeat;
+                background-position: 0 9px;
             }
             
-            .sidebar-nav > ul > li > ul > li:last-child:before {
-                height: 16px;
-            }
-            
-            .sidebar-nav > ul > li > ul > li > ul > li:before {
+            /* 树形结构线条 - 第三级 */
+            .sidebar-nav > ul > li > ul > li > ul > li::before {
                 content: "";
                 position: absolute;
+                top: 0;
                 left: 0;
-                top: -4px;
-                height: calc(100% + 4px);
-                border-left: 1px solid #ddd;
-                z-index: 0;
+                bottom: 0;
+                width: 16px;
+                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='24'><path d='M8,0 L8,17 M8,17 L16,17' stroke='%23bbb' fill='none' /></svg>") no-repeat;
+                background-position: 0 9px;
             }
             
-            .sidebar-nav > ul > li > ul > li > ul > li:first-child:before {
-                top: 10px;
-                height: calc(100% - 10px);
+            .sidebar-nav > ul > li > ul > li > ul > li:last-child::before {
+                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='24'><path d='M8,0 L8,17 M8,17 L16,17' stroke='%23bbb' fill='none' /></svg>") no-repeat;
+                background-position: 0 9px;
             }
             
-            .sidebar-nav > ul > li > ul > li > ul > li:last-child:before {
-                height: 14px;
-            }
-            
-            .sidebar-nav > ul > li > ul > li:after {
+            /* 垂直连接线 */
+            .sidebar-nav > ul > li > ul::before {
                 content: "";
                 position: absolute;
-                left: 0;
-                top: 14px;
-                width: 10px;
-                border-top: 1px solid #ddd;
-                z-index: 0;
+                top: 0;
+                bottom: 0;
+                left: 8px;
+                border-left: 1px solid #bbb;
+                z-index: -1;
             }
             
-            .sidebar-nav > ul > li > ul > li > ul > li:after {
+            .sidebar-nav > ul > li > ul > li > ul::before {
                 content: "";
                 position: absolute;
-                left: 0;
-                top: 13px;
-                width: 10px;
-                border-top: 1px solid #ddd;
-                z-index: 0;
+                top: 0;
+                bottom: 0;
+                left: 8px;
+                border-left: 1px solid #bbb;
+                z-index: -1;
             }
             
             /* 鼠标悬停高亮效果 */
@@ -193,20 +144,13 @@
             }
             
             /* 为当前选中项添加左侧标记 */
-            .sidebar-nav li.active:before {
+            .sidebar-nav li.active > a::before {
                 content: "";
                 position: absolute;
                 left: 0;
                 top: 0;
                 height: 100%;
                 border-left: 2px solid var(--theme-color, #42b983);
-                z-index: 1;
-            }
-            
-            /* 使图标与文字对齐 */
-            .sidebar-nav li a span[class^="emoji-"] {
-                margin-right: 5px;
-                vertical-align: middle;
             }
         </style>
     </head>
