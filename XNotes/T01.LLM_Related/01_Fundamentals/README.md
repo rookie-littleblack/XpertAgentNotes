@@ -2,10 +2,10 @@
 
 ## 子目录内容
 
-1. 🏛️ [大模型发展历史](./01_History.md)
-2. 🔍 [核心概念与术语](./02_Concepts.md)
-3. 📊 [专业术语表](./03_Terminology.md)
-4. 🎯 [应用场景](./04_Applications.md)
+1. 🏛️ [大模型发展历史](history.md)
+2. 🔍 [核心概念与术语](concepts.md)
+3. 📊 [专业术语表](terminology.md)
+4. 🎯 [应用场景](applications.md)
 
 ## 板块说明
 
