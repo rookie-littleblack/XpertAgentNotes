@@ -41,7 +41,6 @@
                 margin: 6px 0 6px 10px;
                 position: relative;
                 padding-left: 15px;
-                border-left: 1px solid #ddd;
                 line-height: 1.5;
             }
             
@@ -55,7 +54,6 @@
                 margin: 4px 0 4px 10px;
                 position: relative;
                 padding-left: 15px;
-                border-left: 1px dashed #ddd;
                 line-height: 1.4;
             }
             
@@ -64,35 +62,122 @@
                 color: #555;
             }
             
-            /* 添加层级标记 */
+            /* 添加层级标记 - 优化对齐 */
+            .sidebar-nav > ul > li > ul > li {
+                border-left: none;
+            }
+            
             .sidebar-nav > ul > li > ul > li > a:before {
                 content: "├─ ";
                 color: #999;
+                position: absolute;
+                left: 0;
             }
             
             .sidebar-nav > ul > li > ul > li:last-child > a:before {
                 content: "└─ ";
                 color: #999;
+                position: absolute;
+                left: 0;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li {
+                border-left: none;
             }
             
             .sidebar-nav > ul > li > ul > li > ul > li > a:before {
                 content: "│  ├─ ";
                 color: #999;
+                position: absolute;
+                left: 0;
             }
             
             .sidebar-nav > ul > li > ul > li > ul > li:last-child > a:before {
                 content: "│  └─ ";
                 color: #999;
+                position: absolute;
+                left: 0;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li > ul > li {
+                border-left: none;
             }
             
             .sidebar-nav > ul > li > ul > li > ul > li > ul > li > a:before {
                 content: "│  │  ├─ ";
                 color: #999;
+                position: absolute;
+                left: 0;
             }
             
             .sidebar-nav > ul > li > ul > li > ul > li > ul > li:last-child > a:before {
                 content: "│  │  └─ ";
                 color: #999;
+                position: absolute;
+                left: 0;
+            }
+            
+            /* 竖线样式 */
+            .sidebar-nav > ul > li > ul:before {
+                display: none;
+            }
+            
+            .sidebar-nav > ul > li > ul > li:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -6px;
+                height: calc(100% + 6px);
+                border-left: 1px solid #ddd;
+                z-index: 0;
+            }
+            
+            .sidebar-nav > ul > li > ul > li:first-child:before {
+                top: 10px;
+                height: calc(100% - 10px);
+            }
+            
+            .sidebar-nav > ul > li > ul > li:last-child:before {
+                height: 16px;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -4px;
+                height: calc(100% + 4px);
+                border-left: 1px solid #ddd;
+                z-index: 0;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li:first-child:before {
+                top: 10px;
+                height: calc(100% - 10px);
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li:last-child:before {
+                height: 14px;
+            }
+            
+            .sidebar-nav > ul > li > ul > li:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 14px;
+                width: 10px;
+                border-top: 1px solid #ddd;
+                z-index: 0;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 13px;
+                width: 10px;
+                border-top: 1px solid #ddd;
+                z-index: 0;
             }
             
             /* 鼠标悬停高亮效果 */
@@ -115,6 +200,7 @@
                 top: 0;
                 height: 100%;
                 border-left: 2px solid var(--theme-color, #42b983);
+                z-index: 1;
             }
             
             /* 使图标与文字对齐 */
