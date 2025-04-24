@@ -10,6 +10,118 @@
             .app-name {
                 display: none !important;
             }
+            
+            /* 侧边栏整体样式 */
+            .sidebar {
+                padding: 20px 0 0;
+                background-color: #fafafa;
+            }
+            
+            .sidebar-nav {
+                padding-left: 10px;
+            }
+            
+            /* 增强侧边栏层级显示 */
+            .sidebar-nav > ul > li {
+                margin-bottom: 12px;
+                line-height: 1.6;
+            }
+            
+            /* 一级标题样式 */
+            .sidebar-nav > ul > li > a {
+                font-size: 16px;
+                font-weight: 600;
+                color: #333;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+            
+            /* 二级菜单样式 */
+            .sidebar-nav > ul > li > ul > li {
+                margin: 6px 0 6px 10px;
+                position: relative;
+                padding-left: 15px;
+                border-left: 1px solid #ddd;
+                line-height: 1.5;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > a {
+                font-size: 14px;
+                color: #444;
+            }
+            
+            /* 三级及以下菜单样式 */
+            .sidebar-nav > ul > li > ul > li > ul li {
+                margin: 4px 0 4px 10px;
+                position: relative;
+                padding-left: 15px;
+                border-left: 1px dashed #ddd;
+                line-height: 1.4;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul li > a {
+                font-size: 13px;
+                color: #555;
+            }
+            
+            /* 添加层级标记 */
+            .sidebar-nav > ul > li > ul > li > a:before {
+                content: "├─ ";
+                color: #999;
+            }
+            
+            .sidebar-nav > ul > li > ul > li:last-child > a:before {
+                content: "└─ ";
+                color: #999;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li > a:before {
+                content: "│  ├─ ";
+                color: #999;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li:last-child > a:before {
+                content: "│  └─ ";
+                color: #999;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li > ul > li > a:before {
+                content: "│  │  ├─ ";
+                color: #999;
+            }
+            
+            .sidebar-nav > ul > li > ul > li > ul > li > ul > li:last-child > a:before {
+                content: "│  │  └─ ";
+                color: #999;
+            }
+            
+            /* 鼠标悬停高亮效果 */
+            .sidebar-nav ul li a:hover {
+                color: var(--theme-color, #42b983);
+                text-decoration: none;
+            }
+            
+            /* 当前选中项样式 */
+            .sidebar-nav li.active > a {
+                color: var(--theme-color, #42b983);
+                font-weight: bold;
+            }
+            
+            /* 为当前选中项添加左侧标记 */
+            .sidebar-nav li.active:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                border-left: 2px solid var(--theme-color, #42b983);
+            }
+            
+            /* 使图标与文字对齐 */
+            .sidebar-nav li a span[class^="emoji-"] {
+                margin-right: 5px;
+                vertical-align: middle;
+            }
         </style>
     </head>
 
