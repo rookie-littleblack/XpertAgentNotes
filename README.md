@@ -1,8 +1,14 @@
 <p align="center">
-  <img src="XImages/20250424-1121_Assets/v3.png" alt="XpertAgentNotes Logo" width="180"/>
+  <img src="XImages/20250424-1121_Assets/v3.png" alt="XpertAgentNotes Logo" width="180"/><br>
+  <span style="font-size:2.2em; font-weight:bold;">XpertAgentNotes</span>
 </p>
 
-# XpertAgentNotes
+<p align="center">
+    <img src="https://img.shields.io/badge/python-3.10-5be.svg">
+    <img src="https://img.shields.io/badge/pytorch-%E2%89%A52.0-orange.svg">
+    <a href="https://github.com/rookie-littleblack/XpertAgentNotes/blob/main/LICENSE"><img src="https://img.shields.io/github/license/modelscope/swift"></a>
+    <a href="https://github.com/rookie-littleblack/XpertAgentNotes/pulls"><img src="https://img.shields.io/badge/PR-welcome-55EB99.svg"></a>
+</p>
 
 ## 📚 项目简介
 
