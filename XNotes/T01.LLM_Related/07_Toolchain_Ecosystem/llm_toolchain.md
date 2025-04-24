@@ -40,14 +40,15 @@
 
 #### 2.2.1 预训练框架
 
+- **[LLaMA-Factory](tools/llama_factory.md)**：统一的大模型微调框架 [🔗](https://github.com/hiyouga/LLaMA-Factory) [📚](https://llamafactory.readthedocs.io/)
 - **[DeepSpeed](https://github.com/microsoft/DeepSpeed)**：微软开发的分布式训练加速库
 - **[Megatron-LM](https://github.com/NVIDIA/Megatron-LM)**：NVIDIA的大规模模型训练框架
 - **[ColossalAI](https://colossalai.org/)**：支持大规模分布式训练的框架
 
 #### 2.2.2 微调框架
 
+- **[LLaMA-Factory](tools/llama_factory.md)**：统一的大模型微调框架 [🔗](https://github.com/hiyouga/LLaMA-Factory) [📚](https://llamafactory.readthedocs.io/)
 - **[PEFT](https://github.com/huggingface/peft)**：参数高效微调库，包括LoRA、Adapter等
-- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)**：统一的大模型微调框架
 - **[FastChat](https://github.com/lm-sys/FastChat)**：用于训练和评估聊天模型的框架
 
 ### 2.3 模型评估与优化工具 📏
