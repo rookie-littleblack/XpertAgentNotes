@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="XImages/20250424-1121_Assets/v3.png" alt="XpertAgentNotes Logo" width="180"/>
+</p>
+
 # XpertAgentNotes
 
 ## 📚 项目简介
