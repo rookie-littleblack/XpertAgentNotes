@@ -55,7 +55,7 @@
             }
             
             .sidebar-nav > ul > li > ul > li > a {
-                font-size: 14px;
+                font-size: 16px;
                 color: #444;
             }
             
@@ -72,63 +72,44 @@
             }
             
             .sidebar-nav > ul > li > ul > li > ul > li > a {
-                font-size: 13px;
+                font-size: 14px;
                 color: #555;
             }
             
             /* 树形结构线条 - 第二级 */
             .sidebar-nav > ul > li > ul > li::before {
-                content: "";
+                content: "├─ ";
                 position: absolute;
-                top: 0;
                 left: 0;
-                bottom: 0;
-                width: 16px;
-                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='24'><path d='M8,0 L8,17 M8,17 L16,17' stroke='%23bbb' fill='none' /></svg>") no-repeat;
-                background-position: 0 9px;
+                color: #bbb;
             }
             
             .sidebar-nav > ul > li > ul > li:last-child::before {
-                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='24'><path d='M8,0 L8,17 M8,17 L16,17' stroke='%23bbb' fill='none' /></svg>") no-repeat;
-                background-position: 0 9px;
+                content: "└─ ";
+                position: absolute;
+                left: 0;
+                color: #bbb;
             }
             
             /* 树形结构线条 - 第三级 */
             .sidebar-nav > ul > li > ul > li > ul > li::before {
-                content: "";
+                content: "├─ ";
                 position: absolute;
-                top: 0;
                 left: 0;
-                bottom: 0;
-                width: 16px;
-                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='24'><path d='M8,0 L8,17 M8,17 L16,17' stroke='%23bbb' fill='none' /></svg>") no-repeat;
-                background-position: 0 9px;
+                color: #bbb;
             }
             
             .sidebar-nav > ul > li > ul > li > ul > li:last-child::before {
-                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='24'><path d='M8,0 L8,17 M8,17 L16,17' stroke='%23bbb' fill='none' /></svg>") no-repeat;
-                background-position: 0 9px;
-            }
-            
-            /* 垂直连接线 */
-            .sidebar-nav > ul > li > ul::before {
-                content: "";
+                content: "└─ ";
                 position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 8px;
-                border-left: 1px solid #bbb;
-                z-index: -1;
+                left: 0;
+                color: #bbb;
             }
             
+            /* 移除垂直连接线 */
+            .sidebar-nav > ul > li > ul::before,
             .sidebar-nav > ul > li > ul > li > ul::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 8px;
-                border-left: 1px solid #bbb;
-                z-index: -1;
+                display: none;
             }
             
             /* 鼠标悬停高亮效果 */
