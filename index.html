@@ -17,6 +17,21 @@
                 subMaxLevel: 3,         // 目录最大层级
                 relativePath: true,     // 启用相对路径
                 auto2top: true,         // 切换页面后是否自动跳转到页面顶部
+                alias: {
+                    '/.*/_sidebar.md': '/_sidebar.md' // 统一使用根目录的侧边栏
+                },
+                basePath: './',         // 文档加载的根路径
+                nameLink: '/',          // 点击项目名称时跳转的链接
+                homepage: 'README.md',  // 默认首页文件
+                notFoundPage: true,     // 找不到页面时显示404页面
+                pathNamespaces: ['/XNotes'],  // 路径命名空间
+                routes: {
+                  '/XNotes/': '/XNotes/README.md',
+                  '/XNotes/T01.LLM_Related/': '/XNotes/T01.LLM_Related/README.md'
+                },
+                requestHeaders: {       // 请求头配置
+                    'cache-control': 'no-cache'
+                },
                 search: {               // 搜索插件配置
                     maxAge: 86400000,     // 过期时间，单位毫秒，默认一天
                     paths: 'auto',
