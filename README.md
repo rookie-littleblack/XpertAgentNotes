@@ -1,6 +1,6 @@
 <p align="center">
   <img src="XImages/20250424-1121_Assets/Logo.png" alt="XpertAgentNotes Logo" width="180"/><br>
-  <span style="font-size:2.2em; font-weight:bold;">XpertAgentNotes</span>
+  <h1 style="font-size:2.2em; font-weight:bold;">XpertAgentNotes</h1>
 </p>
 
 <p align="center">
