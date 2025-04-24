@@ -21,14 +21,14 @@ XpertAgentNotes 是一个关于人工智能(AI)的全面知识库，旨在提供
 项目按主题组织成不同目录，包括：
 
 - **T01.LLM_Related/**: 大模型相关知识体系
-  - **[01_Introduction](XNotes/T01.LLM_Related/01_Introduction/README.md)**: 大模型基础概念与发展历程
-  - **[02_Architecture_Components](XNotes/T01.LLM_Related/02_Architecture_Components/README.md)**: 模型架构与核心组件
-  - **[03_Training_Methods](XNotes/T01.LLM_Related/03_Training_Methods/README.md)**: 训练方法与技术
-  - **[04_Fine_Tuning](XNotes/T01.LLM_Related/04_Fine_Tuning/README.md)**: 微调技术与方法
+  - **[01_Fundamentals](XNotes/T01.LLM_Related/01_Fundamentals/README.md)**: 大模型基础知识
+  - **[02_Core_Tech](XNotes/T01.LLM_Related/02_Core_Tech/README.md)**: 核心技术原理
+  - **[03_OpenSource_Models](XNotes/T01.LLM_Related/03_OpenSource_Models/README.md)**: 开源大模型项目
+  - **[04_Training_Finetune](XNotes/T01.LLM_Related/04_Training_Finetune/README.md)**: 大模型训练与微调
   - **[05_Inference_Deployment](XNotes/T01.LLM_Related/05_Inference_Deployment/README.md)**: 推理优化与部署架构
   - **[06_Agents_Applications](XNotes/T01.LLM_Related/06_Agents_Applications/README.md)**: 智能体架构与应用
   - **[07_Toolchain_Ecosystem](XNotes/T01.LLM_Related/07_Toolchain_Ecosystem/README.md)**: 工具链与生态系统
-  - **[08_QA_Interview](XNotes/T01.LLM_Related/08_QA_Interview/README.md)**: 面试问答与知识检验
+  - **[08_QA_Interview](XNotes/T01.LLM_Related/08_QA_Interview/README.md)**: 常见问题与面试
   - **[09_Resources](XNotes/T01.LLM_Related/09_Resources/README.md)**: 学习资源与参考材料
 
 ## 🌟 项目特色
