@@ -10,6 +10,8 @@
     <a href="https://github.com/rookie-littleblack/XpertAgentNotes/pulls"><img src="https://img.shields.io/badge/PR-welcome-55EB99.svg"></a>
 </p>
 
+---
+
 ## 📚 项目简介
 
 XpertAgentNotes 是一个关于人工智能(AI)的全面知识库，旨在提供系统化、结构化的大模型技术学习资源和实践指南。本项目涵盖从基础理论到前沿应用的各个方面，适合研究人员、开发者和行业从业者参考学习。
@@ -19,15 +21,15 @@ XpertAgentNotes 是一个关于人工智能(AI)的全面知识库，旨在提供
 项目按主题组织成不同目录，包括：
 
 - **T01.LLM_Related/**: 大模型相关知识体系
-  - **01_Introduction/**: 大模型基础概念与发展历程
-  - **02_Architecture_Components/**: 模型架构与核心组件
-  - **03_Training_Methods/**: 训练方法与技术
-  - **04_Fine_Tuning/**: 微调技术与方法
-  - **05_Inference_Deployment/**: 推理优化与部署架构
-  - **06_Agents_Applications/**: 智能体架构与应用
-  - **07_Toolchain_Ecosystem/**: 工具链与生态系统
-  - **08_QA_Interview/**: 面试问答与知识检验
-  - **09_Resources/**: 学习资源与参考材料
+  - **[01_Introduction](T01.LLM_Related/01_Introduction.md)**: 大模型基础概念与发展历程
+  - **[02_Architecture_Components](T01.LLM_Related/02_Architecture_Components.md)**: 模型架构与核心组件
+  - **[03_Training_Methods](T01.LLM_Related/03_Training_Methods.md)**: 训练方法与技术
+  - **[04_Fine_Tuning](T01.LLM_Related/04_Fine_Tuning.md)**: 微调技术与方法
+  - **[05_Inference_Deployment](T01.LLM_Related/05_Inference_Deployment.md)**: 推理优化与部署架构
+  - **[06_Agents_Applications](T01.LLM_Related/06_Agents_Applications.md)**: 智能体架构与应用
+  - **[07_Toolchain_Ecosystem](T01.LLM_Related/07_Toolchain_Ecosystem.md)**: 工具链与生态系统
+  - **[08_QA_Interview](T01.LLM_Related/08_QA_Interview.md)**: 面试问答与知识检验
+  - **[09_Resources](T01.LLM_Related/09_Resources.md)**: 学习资源与参考材料
 
 ## 🌟 项目特色
 
