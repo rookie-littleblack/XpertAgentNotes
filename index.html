@@ -5,23 +5,29 @@
         <title>XpertAgentNotes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+        <style>
+            /* 隐藏顶部导航栏中的标题 */
+            .app-name {
+                display: none !important;
+            }
+        </style>
     </head>
 
     <body>
         <div id="app"></div>
         <script>
             window.$docsify = {
-                name: 'XpertAgentNotes',
+                name: '', // 移除导航顶部的标题
                 repo: 'rookie-littleblack/XpertAgentNotes',
                 loadSidebar: true,      // 启用侧边栏
-                subMaxLevel: 10,         // 目录最大层级
-                relativePath: true,    // 相对路径
+                subMaxLevel: 0,         // 设为0，禁用自动生成页面目录
+                relativePath: true,     // 相对路径
                 auto2top: true,         // 切换页面后是否自动跳转到页面顶部
                 alias: {
                     '/.*/_sidebar.md': '/_sidebar.md', // 统一使用根目录的侧边栏
                 },
                 basePath: './',         // 文档加载的根路径
-                nameLink: '/',          // 点击项目名称时跳转的链接
+                nameLink: 'https://rookie-littleblack.github.io/XpertAgentNotes/', // 修复项目URL
                 homepage: 'README.md',  // 默认首页文件
                 notFoundPage: true,     // 找不到页面时显示404页面
                 pathNamespaces: ['/XNotes'],  // 路径命名空间
