@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="XImages/20250424-1121_Assets/v3.png" alt="XpertAgentNotes Logo" width="180"/><br>
+  <img src="XImages/20250424-1121_Assets/Logo.png" alt="XpertAgentNotes Logo" width="180"/><br>
   <span style="font-size:2.2em; font-weight:bold;">XpertAgentNotes</span>
 </p>
 
@@ -20,16 +20,17 @@ XpertAgentNotes 是一个关于人工智能(AI)的全面知识库，旨在提供
 
 项目按主题组织成不同目录，包括：
 
-- **T01.LLM_Related/**: 大模型相关知识体系
-  - **[01_Fundamentals](XNotes/T01.LLM_Related/01_Fundamentals/README.md)**: 大模型基础知识
-  - **[02_Core_Tech](XNotes/T01.LLM_Related/02_Core_Tech/README.md)**: 核心技术原理
-  - **[03_OpenSource_Models](XNotes/T01.LLM_Related/03_OpenSource_Models/README.md)**: 开源大模型项目
-  - **[04_Training_Finetune](XNotes/T01.LLM_Related/04_Training_Finetune/README.md)**: 大模型训练与微调
-  - **[05_Inference_Deployment](XNotes/T01.LLM_Related/05_Inference_Deployment/README.md)**: 推理优化与部署架构
-  - **[06_Agents_Applications](XNotes/T01.LLM_Related/06_Agents_Applications/README.md)**: 智能体架构与应用
-  - **[07_Toolchain_Ecosystem](XNotes/T01.LLM_Related/07_Toolchain_Ecosystem/README.md)**: 工具链与生态系统
-  - **[08_QA_Interview](XNotes/T01.LLM_Related/08_QA_Interview/README.md)**: 常见问题与面试
-  - **[09_Resources](XNotes/T01.LLM_Related/09_Resources/README.md)**: 学习资源与参考材料
+- **[T01.LLM_Related/](XNotes/T01.LLM_Related/README.md)**: 大模型相关知识体系
+    - **[01_Fundamentals](XNotes/T01.LLM_Related/01_Fundamentals/README.md)**: 大模型基础知识
+    - **[02_Core_Tech](XNotes/T01.LLM_Related/02_Core_Tech/README.md)**: 核心技术原理
+    - **[03_OpenSource_Models](XNotes/T01.LLM_Related/03_OpenSource_Models/README.md)**: 开源大模型项目
+    - **[04_Training_Finetune](XNotes/T01.LLM_Related/04_Training_Finetune/README.md)**: 大模型训练与微调
+    - **[05_Inference_Deployment](XNotes/T01.LLM_Related/05_Inference_Deployment/README.md)**: 推理优化与部署架构
+    - **[06_Agents_Applications](XNotes/T01.LLM_Related/06_Agents_Applications/README.md)**: 智能体架构与应用
+    - **[07_Toolchain_Ecosystem](XNotes/T01.LLM_Related/07_Toolchain_Ecosystem/README.md)**: 工具链与生态系统
+    - **[08_QA_Interview](XNotes/T01.LLM_Related/08_QA_Interview/README.md)**: 常见问题与面试
+    - **[09_Resources](XNotes/T01.LLM_Related/09_Resources/README.md)**: 学习资源与参考材料
+    - *更多内容请参考 [`XNotes/T01.LLM_Related`](XNotes/T01.LLM_Related/README.md#目录)*
 
 ## 🌟 项目特色
 
@@ -44,23 +45,24 @@ XpertAgentNotes 是一个关于人工智能(AI)的全面知识库，旨在提供
 ### 学习路径建议
 
 1. **入门者**:
-   - 从 `01_Introduction` 开始，了解基础概念
-   - 参考 `09_Resources/beginner_resources.md` 获取入门学习资料
-   - 学习 `02_Architecture_Components` 理解模型基本结构
+    - 从 `01_Fundamentals` 开始，了解基础概念和原理
+    - 参考 `09_Resources` 获取入门学习资料
+    - 学习 `02_Core_Tech` 理解模型核心技术
 
 2. **开发者**:
-   - 深入学习 `04_Fine_Tuning` 和 `05_Inference_Deployment`
-   - 参考 `07_Toolchain_Ecosystem` 了解开发工具和框架
-   - 学习 `06_Agents_Applications` 构建自己的应用
+    - 深入学习 `04_Training_Finetune` 和 `05_Inference_Deployment`
+    - 参考 `07_Toolchain_Ecosystem` 了解开发工具和框架
+    - 学习 `06_Agents_Applications` 构建自己的智能应用
 
 3. **研究人员**:
-   - 关注 `03_Training_Methods` 了解前沿训练技术
-   - 参考 `09_Resources/research_papers.md` 了解学术进展
-   - 探索 `09_Resources/advanced_resources.md` 获取深度资源
+    - 关注 `03_OpenSource_Models` 和 `04_Training_Finetune` 了解前沿技术
+    - 参考 `09_Resources/research_papers.md` 了解学术进展
+    - 探索开源模型架构和创新训练方法
 
 4. **行业从业者**:
-   - 直接查看 `10_Industry_Applications` 了解相关行业应用
-   - 参考 `09_Resources/case_studies.md` 获取实施案例
+    - 关注 `06_Agents_Applications` 了解大模型行业应用案例
+    - 参考 `09_Resources` 中的行业实践指南
+    - 学习 `05_Inference_Deployment` 掌握高效部署方法
 
 ### 如何贡献
 
@@ -73,10 +75,10 @@ XpertAgentNotes 是一个关于人工智能(AI)的全面知识库，旨在提供
 5. 提交 Pull Request
 
 贡献内容可以包括但不限于：
-- 补充或更新现有文档
-- 添加新的学习资源
-- 分享行业应用案例
-- 修正错误或改进解释
+    - 补充或更新现有文档
+    - 添加新的学习资源
+    - 分享行业应用案例
+    - 修正错误或改进解释
 
 ## 📝 许可协议
 
@@ -94,4 +96,3 @@ XpertAgentNotes 是一个关于人工智能(AI)的全面知识库，旨在提供
 ---
 
 ⭐ 如果这个项目对你有帮助，别忘了给我们一个星标！
-
