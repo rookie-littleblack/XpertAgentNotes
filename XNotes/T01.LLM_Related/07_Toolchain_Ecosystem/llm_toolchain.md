@@ -270,3 +270,18 @@ def process_customer_query(query, chat_history=[]):
 大模型工具链与生态系统的繁荣发展为AI应用创新提供了强大支持。通过合理选择和集成适合的工具链组件，开发者可以显著降低大模型应用的开发门槛和成本，加速AI解决方案的落地。随着技术的不断演进，工具链将更加智能化、自动化，进一步推动大模型技术的普及和应用价值的释放。
 
 无论是研究人员、开发者还是企业决策者，了解和掌握大模型工具链生态是把握AI技术发展方向和应用潜力的关键。通过持续学习和实践，我们可以更好地利用这些工具，构建更智能、更有价值的AI应用。 
+
+## 9. 工具和算法列表
+
+### 工具列表
+
+- [DeepSpeed](./tools/deepspeed.md)
+- [FlashAttention2](./tools/flash_attention_2.md)
+- [LLaMA-Factory](./tools/llama_factory.md)
+- [Transformers](./tools/transformers.md)
+- [Unsloth](./tools/unsloth.md)
+- [vllm](./tools/vllm.md)
+
+### 算法列表
+
+- [LoRA](./algorithms/lora.md)
