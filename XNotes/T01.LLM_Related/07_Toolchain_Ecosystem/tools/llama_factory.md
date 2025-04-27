@@ -289,7 +289,7 @@ LLaMA-Factory 是一个用于大模型微调的统一框架，支持多种模型
 | 参数名称 | 类型 | 介绍 | 默认值 |
 | --- | --- | --- | --- |
 | cutoff_len | int | 截断长度，指在处理输入时，模型能接受的最大标记（token）数量，若输入序列超过这个长度，多余的部分将被截断，确保输入长度不会超出模型的处理能力。对于文本分类任务，通常截断到128或256个标记就足够了，而对于更复杂的任务，如文本生成或翻译，可能需要更长的长度 | 需根据任务设置 |
-| lora_rank | int | LoRA微调的本征维数 `r`，`r`越大可训练的参数越多 | 8 |
+| lora_rank | int | [LoRA微调](../algorithms/lora.md)的本征维数 `r`，`r`越大可训练的参数越多 | 8 |
 | lora_alpha | Optional[int] | LoRA缩放系数，一般情况下为lora_rank * 2 | None |
 | lora_dropout | float | LoRA微调中的dropout率 | 0 |
 | moe_aux_loss_coef | float | MOE辅助损失系数 | 无 |
@@ -403,3 +403,4 @@ FORCE_TORCHRUN=1 NNODES=2 NODE_RANK=1 MASTER_ADDR=192.168.100.2 MASTER_PORT=2950
 - [LLaMA-Factory 官方文档](https://llamafactory.readthedocs.io/)
 - [LLaMA-Factory 源码](https://github.com/hiyouga/LLaMA-Factory)
 - [LLaMA-Factory 训练参数列表](./llama_factory_trainer_params.md)
+- [LoRA微调](../algorithms/lora.md)
